@@ -40,7 +40,7 @@ interface printTeacherFunction {
 }
 
 function printTeacher(firstName: string, lastName: string): string {
-  return "${firstName} . ${lastName}";
+  return `${firstName} . ${lastName}`;
 }
 
 /////////////////////TASK 04//////////////
