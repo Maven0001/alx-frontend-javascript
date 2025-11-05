@@ -17,17 +17,33 @@ const teacher1: Teacher = {
   contract: false,
 };
 
+/////////////////////TASK 02//////////////
 interface Directors {
+  firstName: string;
+  lastName: string;
+  location: string;
+  fullTimeEmployee: boolean;
   numberOfReports: number;
 }
+const director1: Directors = {
+  firstName: "John",
+  lastName: "Doe",
+  location: "London",
+  fullTimeEmployee: true,
+  numberOfReports: 17,
+};
+
+/////////////////////TASK 03//////////////
 
 interface printTeacherFunction {
   (firstName: string, lastName: string): string;
 }
 
-const printTeacher: printTeacherFunction = (firstName, lastName) => {
-  return "${firstName[0]} . ${lastName}";
-};
+function printTeacher(firstName: string, lastName: string): string {
+  return "${firstName} . ${lastName}";
+}
+
+/////////////////////TASK 04//////////////
 
 interface StudentConstructor {
   firstName: string;
@@ -40,7 +56,7 @@ interface StudentClassInterface {
 }
 
 // Class implementing the interface
-class StudentClass implements StudentClassInterface {
+class StudentClass {
   private firstName: string;
   private lastName: string;
 
