@@ -18,20 +18,9 @@ const teacher1: Teacher = {
 };
 
 /////////////////////TASK 02//////////////
-interface Directors {
-  firstName: string;
-  lastName: string;
-  location: string;
-  fullTimeEmployee: boolean;
+interface Directors extends Teacher {
   numberOfReports: number;
 }
-const director1: Directors = {
-  firstName: "John",
-  lastName: "Doe",
-  location: "London",
-  fullTimeEmployee: true,
-  numberOfReports: 17,
-};
 
 /////////////////////TASK 03//////////////
 
@@ -39,9 +28,9 @@ interface printTeacherFunction {
   (firstName: string, lastName: string): string;
 }
 
-function printTeacher(firstName: string, lastName: string): string {
-  return `${firstName} . ${lastName}`;
-}
+const printTeacher: printTeacherFunction = (firstName, lastName) => {
+  return `${firstName.charAt(0)}. ${lastName}`;
+};
 
 /////////////////////TASK 04//////////////
 
