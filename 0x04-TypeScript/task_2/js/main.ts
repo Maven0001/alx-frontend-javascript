@@ -131,7 +131,7 @@ function executeWork(employee: Director | Teacher): string {
 }
 
 /////////////////////TASK 07//////////////
-type Subjects = "Math" | "history";
+type Subjects = "Math" | "History";
 
 function teachClass(todayClass: Subjects): string {
   if (todayClass === "Math") {
@@ -140,3 +140,5 @@ function teachClass(todayClass: Subjects): string {
     return "Teaching History";
   }
 }
+
+/////////////////////TASK 07//////////////
