@@ -18,7 +18,7 @@ const teacher1: Teacher = {
 };
 
 /////////////////////TASK 02//////////////
-interface Directors extends Teacher {
+interface Director extends Teacher {
   numberOfReports: number;
 }
 
