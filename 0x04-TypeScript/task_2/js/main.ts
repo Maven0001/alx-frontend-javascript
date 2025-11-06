@@ -131,15 +131,12 @@ function executeWork(employee: Director | Teacher): string {
 }
 
 /////////////////////TASK 07//////////////
-let subjects (subject: 'Math' | 'history'): "stringliteral"{
+type Subjects = "Math" | "history";
 
-}
-
-function teachClass(todayClass): string{
-  if (todayClass = 'Math'){
-    return "Teaching Math"
-  }else{
-    return "Teaching History"
+function teachClass(todayClass: Subjects): string {
+  if (todayClass === "Math") {
+    return "Teaching Math";
+  } else {
+    return "Teaching History";
   }
-
 }
