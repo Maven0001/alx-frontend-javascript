@@ -141,4 +141,4 @@ function teachClass(todayClass: Subjects): string {
   }
 }
 
-/////////////////////TASK 07//////////////
+/////////////////////TASK 08//////////////
