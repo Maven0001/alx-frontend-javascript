@@ -129,3 +129,17 @@ function executeWork(employee: Director | Teacher): string {
     return employee.workTeacherTasks();
   }
 }
+
+/////////////////////TASK 07//////////////
+let subjects (subject: 'Math' | 'history'): "stringliteral"{
+
+}
+
+function teachClass(todayClass): string{
+  if (todayClass = 'Math'){
+    return "Teaching Math"
+  }else{
+    return "Teaching History"
+  }
+
+}
