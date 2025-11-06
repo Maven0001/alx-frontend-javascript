@@ -115,3 +115,17 @@ function createEmployee(salary: number) {
     return new Director();
   }
 }
+
+/////////////////////TASK 06//////////////
+
+function isDirector(employee: Director | Teacher) {
+  return employee as Director;
+}
+
+function executeWork(employee: Director | Teacher): string {
+  if (isDirector(employee)) {
+    return employee.workDirectorTasks();
+  } else {
+    return employee.workTeacherTasks();
+  }
+}
